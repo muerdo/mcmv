@@ -1,0 +1,31 @@
+<html>
+<head> 
+    <link rel="stylesheet" href="/home/franz/acai/redire/redi.css">
+    <script src="script.js"></script>
+
+    <title>Redirecionamento</title>
+</head>
+<body>
+    <h1>Dados enviados:</h1>
+    <p>Nome do Beneficiário: <span id="nomeBeneficiario"></span></p>
+    <p>Sexo: <span id="sexo"></span></p>
+    <!-- Exiba outros dados do formulário -->
+
+    <h2>Anexar documentação:</h2>
+    <form action="processar_anexo.php" method="POST" enctype="multipart/form-data">
+        <label for="anexoLaudoPCD">Anexar laudo para PCD:</label>
+        <input type="file" id="anexoLaudoPCD" name="anexoLaudoPCD"><br>
+
+        <label for="anexoRecibo">Anexar recibo:</label>
+        <input type="file" id="anexoRecibo" name="anexoRecibo"><br>
+
+        <!-- Adicione outros campos de anexo, se necessário -->
+
+        <input type="submit" value="Enviar anexos">
+    </form>
+
+</body>
+</html>
+
+</body>
+</html>
